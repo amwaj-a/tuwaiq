@@ -1,0 +1,258 @@
+* {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  --color: rgb(78, 55, 151);
+  --color-cyan: #54bbbd;
+  --color-purple: #c084fc;
+}
+
+nav {
+  z-index: 5;
+  /* width: 100vw; */
+  height: max-content;
+  position: sticky;
+  top: 0;
+  background-color: var(--color);
+  /* transition: background-color 0.4s; */
+}
+nav div {
+  padding: 10px;
+}
+ul {
+  color: aliceblue;
+  font-size: 1.4em;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+.logo {
+  width: 70%;
+}
+.video-section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.video-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(65, 0, 255, 0.4),
+    rgba(255, 0, 232, 0.2)
+  );
+  z-index: 1;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container-text {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+}
+
+.container-text h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.container-text div {
+  font-size: 2rem;
+  color: white;
+  background-color: var(--color-cyan);
+  padding: 1rem 6rem;
+  border-radius: 100px;
+  margin-top: 1rem;
+}
+
+.container-text a {
+  text-decoration: none;
+  color: white;
+}
+.programs-section {
+  background-color: #f2f4f7;
+  padding: 10rem 0;
+}
+.programs-wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: max-content;
+}
+
+.program-header {
+  color: var(--color);
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.programs-wraper-item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.program-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 24rem;
+  height: 20rem;
+  text-align: end;
+  color: var(color-purple);
+  font-weight: bolder;
+  border-right: solid var(--color-purple) 20px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 10px;
+}
+.icon-text-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2px;
+}
+.icon-text-container span {
+  color: gray;
+}
+.down-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-card {
+  border: 1px solid var(--color-purple);
+  border-radius: 100px;
+  padding: 0px 20px;
+  color: var(--color-purple);
+}
+.button-card:hover {
+  background-color: var(--color-purple);
+  color: white;
+}
+
+.program-item:nth-child(1) p {
+  color: var(--color-purple);
+}
+.program-item:nth-child(n + 2) {
+  border-color: var(--color-cyan);
+}
+.program-item:nth-child(n + 2) p {
+  color: var(--color-cyan);
+}
+.program-item:nth-child(n + 2) .button-card {
+  color: var(--color-cyan);
+  border-color: var(--color-cyan);
+}
+.program-item:nth-child(n + 2) .button-card:hover {
+  background-color: var(--color-cyan);
+  color: white;
+}
+
+.button-card-down {
+  border: 1px solid #9f94c6;
+  border-radius: 100px;
+  padding: 0px 20px;
+  color: #9f94c6;
+  font-size: 1.5em;
+}
+
+.button-card-down:hover {
+  background-color: #9f94c6;
+  color: white;
+}
+.viewers-section {
+  height: max-content;
+  padding: 10rem 0;
+}
+
+.viewers-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+.card-container {
+  width: 18rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  box-shadow: 0px 10px 15px gray;
+  position: relative;
+}
+
+.image-container {
+  background-color: #91d8db;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 60%;
+  transform: translateY(-100%);
+}
+
+.icon-item {
+  width: 35%;
+  height: 50%;
+}
+
+.card-container h1 {
+  text-align: center;
+}
+.cyan-color {
+  color: var(--color-cyan);
+}
+
+.number {
+  color: purple;
+  font-size: 2em;
+}
