@@ -1,6 +1,5 @@
 *{
     font-family:  "Cairo", sans-serif;;
-
     margin: 0;
     --color:rgb(78, 55 ,151);
 }
@@ -12,13 +11,12 @@ nav{
 position: sticky;
 top:0;
     background-color: var(--color);
-transition: background-color 0.4s;
+/* transition: background-color 0.4s; */
 }
 nav div{
     padding: 10px;
 }
 ul{
-    /* padding: 10px; */
     color: aliceblue;
     font-size: 1.4em;
     list-style: none;
@@ -28,7 +26,7 @@ ul{
 }
 .logo{
 
-    width: 15vw;
+    width: 70%;
    
 }
 
@@ -55,47 +53,138 @@ margin-right: 30px;
 }
 
 
-.header2{
+.Backegroundheader{
     /* position: relative; */
     height: 66vh;
     background-color: rgba(78, 55 ,151,0.3);
 
 
 }
-
-.section1Div img{
-    /* border: 2px solid red; */
-    /* flex-grow: 1 */
-    /* width: 20%; */
-    /* position: a; */
-    /* top: -30%; */
-    /* position: absolute; */
-    /* bottom: -50%; */
-    /* left: 10%; */
-
-}
-
-.section1Div{
-    /* border: 2px solid red; */
+.sticker{
     display: flex;
-    justify-content: space-around;
-
+    gap: 10px;
 }
-.section1Div div{
+.sticker img{
+
+    /* border :10px solid red; */
+}
+
+main{
+    margin-top: 10px;
+
+   
+    /* border: 10px solid red;; */
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    gap: 20px;
     direction: rtl;
-    align-self:center;
-  
-       /* border: 2px solid red; */
+    align-content: space-around;
+}
+section{
+/* border: 10px solid blue; */
+
+width: 80vw;
 
 }
-.section1Div h1{
-    font-weight: 800;
 
+.section2 ul{
+    /* border: 10px solid red; */
+    color: black;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.section2 hr{
+    margin:  10px;
+    width: 3vw;
+    height: 1.7vh;
+    background-color: var(--color);
+}
+
+.section3{
+    padding: 10px;
+    
+}
+.icons {
+    width:70vw ;
+
+    align-self: center;
+    height: 36vh;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid var(--color);
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: center;
+ }
+.icons div{
+    /* border: 2px solid red; */
+    width: 17%;
+    text-align: center;
+}
+
+main h1{
+    font-weight: 800;
     font-size: 2em;
 }
-.section1Div p{
+main p{
     /* padding: 10px; */
     font-size: 1.3em;
     font-weight: 500;
 
+}
+footer{
+    direction: rtl;
+     
+    /* border: 10px solid black; */
+color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    background-color: var(--color);
+}
+
+.sectionFooter{
+    width: 90%;
+
+
+}
+footer li{
+    /* border: 1px solid red; */
+    height: 14vh;
+
+
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.socialIcons{
+    /* border: 1px solid red; */
+
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+/* ali; */
+
+}
+
+.socialIcons h4{
+    align-self: end;
+    /* color: red; */
+}
+.socialIcons a{width: 1.3em;
+}
+.socialIcons img{
+    /* border: 10px solid red;; */
+width: 100%;
+}
+.socialIcons img:hover{
+    /* border: 10px solid red;; */
+transform: scale(1.2,1.2);
 }
