@@ -1,0 +1,218 @@
+*{
+    font-family:  "Cairo", sans-serif;;
+    margin: 0;
+    --color:rgb(78, 55 ,151);
+    --color--icon:rgb(84, 184, 189);
+}
+/* CSS navBar */
+nav{
+    z-index: 1;
+    height: max-content;
+    background-color: var(--color);
+position: sticky;
+top:0;
+/* box-shadow: 1px 1px 40px black; */
+
+}
+nav div{
+    padding: 10px;
+}
+ul{
+    color: aliceblue;
+    font-size: 1.4em;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+
+    width: 70%;
+   
+}
+
+ul a:hover{
+    color: rgb(66, 170, 207);
+}
+
+
+header{
+    background: url('https://tuwaiq.edu.sa/img/aboutImage2.png')  no-repeat;
+    background-size:cover ;
+    height: 100vh;
+ 
+}
+main{
+    /* border: 10px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.section1{
+  
+    width: 80vw;
+
+}
+
+.section1 h1{
+    font-size: 4em;
+    font-weight: 800;
+    color: var(--color);
+}
+.section1 p {
+    /* border: 10px solid rebeccapurple; */
+
+    font-weight: 500;
+
+    font-size: 2em;
+}
+
+.icon{
+    /* border: 10px solid rebeccapurple; */
+
+    display: flex;
+    justify-content: space-around;
+}
+.icon div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.fa{
+    color:var(--color--icon) ;
+    font-size: 5em;
+}
+strong{
+    font-size: 2em;
+    color: var(--color);
+}
+
+span{
+    font-weight: 700;
+}
+
+
+.section2{
+    height: 80vh;;
+text-align: center;
+    background-color:rgb(245, 246, 249);
+}
+.section2Header{
+    padding-top: 20px;
+    height: 16vh;
+    /* border: 10px solid red; */
+}
+.sectionIcons{
+
+/* border:  10px solid red; */
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+align-items: center;
+
+}
+.sectionIcons div{
+    width: 25vw;
+    height: 30vh;
+    /* border: 1px solid pink; */
+}
+.sectionIcons img{
+    width: 20%;
+}
+
+
+
+
+address{
+    width: 40vw;
+    /* border: 10px solid red; */
+    text-align: right;
+    font-size: 1.5em;
+}
+
+
+.section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+    text-align: center;
+    /* border: 1px solid yellow; */
+}
+.section3 strong{
+    height: 20vh;
+}
+
+
+.addressMap{
+    height: 50vh;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 10px solid black; */
+
+}
+
+
+iframe{
+    align-self: stretch;
+margin-bottom: 10px;}
+
+footer{
+    direction: rtl;
+     
+    /* border: 10px solid black; */
+color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    background-color: var(--color);
+}
+
+.sectionFooter{
+    width: 90%;
+
+
+}
+footer li{
+    /* border: 1px solid red; */
+    height: 14vh;
+
+
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.socialIcons{
+    /* border: 1px solid red; */
+
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.socialIcons h4{
+    align-self: end;
+}
+.socialIcons a{width: 1.3em;
+}
+.socialIcons img{
+    /* border: 10px solid red;; */
+width: 100%;
+}
+.socialIcons img:hover{
+    /* border: 10px solid red;; */
+transform: scale(1.2,1.2);
+}
