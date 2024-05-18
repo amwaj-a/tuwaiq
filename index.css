@@ -346,8 +346,8 @@ a {
 }
 
 .right-container img {
-  height: 80%;
-  width: 80%;
+  height: 70%;
+  width: 70%;
   align-self: flex-end;
 }
 
@@ -400,6 +400,25 @@ h3 {
   text-align: right;
   font-weight: bold;
 }
+
+@media (max-width: 1729px) {
+  .news-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-container img {
+    height: 70%;
+    width: 70%;
+    align-self: center;
+  }
+  .text-container {
+    align-self: center;
+    width: 70%;
+  }
+}
+
 .partners-section {
   background-color: #f2f4f7;
   padding: 10rem 0;
