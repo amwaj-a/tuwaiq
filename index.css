@@ -8,12 +8,11 @@
 
 nav {
   z-index: 5;
-  /* width: 100vw; */
+
   height: max-content;
   position: sticky;
   top: 0;
   background-color: var(--color);
-  /* transition: background-color 0.4s; */
 }
 nav div {
   padding: 10px;
